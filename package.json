@@ -1,18 +1,18 @@
 {
   "name": "microtime-nodejs",
   "version": "1.0.0",
-  "description": "Native Javascript shim for the microtime (https://github.com/wadey/node-microtime) package",
+  "description": "Native Javascript version of the microtime (https://github.com/wadey/node-microtime) package",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yuri0/microtime-nodejs"
+    "url": "https://github.com/outwithreality/microtime-nodejs"
   },
   "keywords": [
     "microtime"
   ],
-  "author": "Yuri Sulyma",
+  "author": "David Alexander",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yuri0/microtime-nodejs/issues"
+    "url": "https://github.com/outwithreality/microtime-nodejs/issues"
   },
   "devDependencies": {
     "microtime": "*"
