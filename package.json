@@ -15,6 +15,5 @@
     "url": "https://github.com/outwithreality/microtime-nodejs/issues"
   },
   "devDependencies": {
-    "microtime": "*"
   }
 }
