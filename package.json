@@ -1,5 +1,5 @@
 {
-  "name": "microtime-nodejs",
+  "name": "microtime-fast",
   "version": "1.0.1",
   "description": "Native Javascript version of the microtime (https://github.com/wadey/node-microtime) package",
   "repository": {
