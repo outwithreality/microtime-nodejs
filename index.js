@@ -2,9 +2,13 @@
     var starttime;
     var settime;
     var acctime;
+    var now;
     acctime=new Date().getTime()/1000;
     starttime=Math.trunc(acctime);
     settime=starttime;
+    
+    //Wait for the second roll over so our clock is aligned
+    // (we could do this on a millisecond rollover)
     while (settime===starttime){
 	settime=starttime;
 	acctime=new Date().getTime()/1000;
@@ -12,7 +16,7 @@
 	now = process.hrtime();
     }
     var start_secs=starttime-now[0];
-    var start_usecs=Math.trunc(now[1]/1000);
+    var start_usecs=now[1]/1000;
     var start_psecs=Math.trunc(now[1]);
     
     var last_secs=0;
@@ -33,14 +37,14 @@
 	    var now = process.hrtime();
 	    
 	    var now_secs = Math.trunc(now[0]+start_secs);
-	    var now_usecs = Math.trunc(now[1]/1000)-start_usecs;
+	    var now_usecs = (now[1]/1000)-start_usecs;
 	    if (now_usecs < 0) {
 		now_usecs=1000000+now_usecs;
 		now_secs--;
 	    }
 	    last_usecs=now_usecs;
 	    last_secs=now_secs;
-	    return [now_secs, now_usecs];
+	    return [now_secs, Math.trunc(now_usecs)];
 	},
 	nowStructIncr: function(){
 	    var now = process.hrtime();
