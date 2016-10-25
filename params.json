@@ -1,0 +1,6 @@
+{
+  "name": "Microtime-nodejs",
+  "tagline": "Native Javascript shim for the microtime package",
+  "body": "# microtime-nodejs\r\n\r\nNative JS drop-in replacement for [microtime](https://github.com/wadey/node-microtime) (if you have `node-gyp` troubles with that then this is a solution). See there for usage.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
