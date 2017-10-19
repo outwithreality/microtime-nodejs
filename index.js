@@ -86,7 +86,7 @@
 	    {
 		now_psecs=last_psecs+1;
 		now_secs=last_secs;
-		if (now_usecs===1000000000)
+		if (now_psecs===1000000000)
 		{
 		    now_psecs=now_psecs-1000000000;
 		    now_secs=last_secs+1;
